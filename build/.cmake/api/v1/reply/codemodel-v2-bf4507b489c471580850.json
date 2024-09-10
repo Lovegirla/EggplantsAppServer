@@ -1,0 +1,65 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "EGGPLANTS_SERVER",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "EGGPLANTS_SERVER::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EGGPLANTS_SERVER-5ef7d1e1f774fab72400.json",
+					"name" : "EGGPLANTS_SERVER",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LibevenTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LibevenTest-88f793e4b342bed4843e.json",
+					"name" : "LibevenTest",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/code/eggplants_server/build",
+		"source" : "/home/code/eggplants_server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
