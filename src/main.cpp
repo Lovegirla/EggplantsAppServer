@@ -1,15 +1,15 @@
 #include<stdio.h>  
 #include<string.h>  
 #include<errno.h>  
-  
 #include<unistd.h>  
 #include<event.h>
+#include "serverController.h"
 
 void accept_cb(int fd, short events, void* arg);
 void socket_read_cb(int fd, short events, void* arg);
 
 int tcp_server_init(int port, int listen_num);
-
+serverController* controller =  new serverController();
 int main(int argc, char const *argv[])
 {
     int listener = tcp_server_init(9999, 10);
@@ -65,14 +65,7 @@ void socket_read_cb(int fd, short events, void* arg)
         close(fd);
         return;
     }
-
-    msg[len] = '\0';
-    printf("recv the client msg : %s\n", msg);
-
-    char reply_msg[4096] = "I have received the msg: ";
-    strcat(reply_msg + strlen(reply_msg), msg);
-
-    write(fd, reply_msg, strlen(reply_msg));
+    controller->process(fd,msg,len);
 }
 
 typedef struct sockaddr SA;  

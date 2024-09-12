@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
@@ -16,7 +16,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -37,14 +37,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "EGGPLANTS_SERVER::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-EGGPLANTS_SERVER-5ef7d1e1f774fab72400.json",
+					"jsonFile" : "target-EGGPLANTS_SERVER-Debug-2f091a29d9c726c006e5.json",
 					"name" : "EGGPLANTS_SERVER",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "LibevenTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LibevenTest-88f793e4b342bed4843e.json",
+					"jsonFile" : "target-LibevenTest-Debug-0918f7a53ae54b33df9b.json",
 					"name" : "LibevenTest",
 					"projectIndex" : 0
 				}

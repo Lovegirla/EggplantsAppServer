@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LibevenTest"
+			"path" : "EGGPLANTS_SERVER"
 		}
 	],
 	"backtrace" : 1,
@@ -26,13 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 6,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -46,6 +46,12 @@
 	"compileGroups" : 
 	[
 		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -53,32 +59,47 @@
 					"path" : "/home/code/eggplants_server/./include"
 				}
 			],
-			"language" : "C",
+			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
-	"id" : "LibevenTest::@6890427a1f51a3e7e1df",
+	"id" : "EGGPLANTS_SERVER::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
 				"fragment" : "-rdynamic",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-L/home/code/eggplants_server",
+				"role" : "libraryPath"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "../libevent_core.a",
 				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lmysqlclient",
+				"role" : "libraries"
 			}
 		],
-		"language" : "C"
+		"language" : "CXX"
 	},
-	"name" : "LibevenTest",
-	"nameOnDisk" : "LibevenTest",
+	"name" : "EGGPLANTS_SERVER",
+	"nameOnDisk" : "EGGPLANTS_SERVER",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +111,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -99,7 +122,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hello-world.c",
+			"path" : "src/login.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/serverController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
